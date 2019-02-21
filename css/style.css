@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: rgb(121,139,150);
+	width: 100%;
+	min-height: 100vh;
+}
+
+#step1 {
+	width: 100%;
+    min-height: 100vh;
+    transition-duration: .3s;
+}
+#step1.open {
+	display: block;
+	opacity: 1;
+}
+#step1.close {
+	opacity: 0;
+	display: none;
+}
+  .tab {
+  	width: 300px;
+  	height: 200px;
+  	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  	background: white;
+    text-align: center;
+  }
+#step1 h1 {
+	padding: 30px 0 40px 0;
+}
+.btn-size {
+	padding: 20px;
+	border-radius: 50%;
+	border: 2px solid;
+	background: white;
+	position: relative;
+	transition-duration: .15s;
+	cursor: pointer;
+}
+.btn-size:hover {
+	background: rgb(245,246,248);
+}
+.btn-size:focus {
+	outline: none;
+}
+.btn-size>span {
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+#step2 {
+	display: none;
+}
+.player-status {
+	margin: auto;
+    width: 300px;
+    text-align: center;
+}
+#restart {
+	display: none;
+	padding: .5rem .75rem;
+	background: #efefef;
+	border: none;
+	font-size: 16px;
+	margin: 20px auto 0 auto;
+}
+/* Table CSS */
+#board {
+	margin: 50px auto 0 auto;
+	width: 300px;
+	height: 300px;
+	border: 1px solid lightgrey;
+	background: white;
+}
+#board td {
+	flex: 1;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	font-size: 42px;
+	color: transparent;
+}
+#game {
+	margin: 200px auto 0 auto;
+	width: 300px;
+	border: 1px solid lightgrey;
+	background: white;
+}
+/*#game table {
+	border-spacing: 0px !important;
+}
+  	#game tr>td {
+		border-bottom: 1px solid lightgrey;
+		border-right: 1px solid lightgrey;
+  	}
+	#game tr:last-child>td {
+		border-bottom: none;
+	}
+	#game tr>td:last-child {
+		border-right: none;
+	}
+	  	#game td {
+		  	width: 100px;
+		  	height: 100px;
+		  	text-align: center;
+		  	color: transparent;
+		  	cursor: pointer;
+		  	font-size: 42px;
+		  	transition-duration: .15s;
+		}
+		#game td:hover {
+			background: rgb(222,222,222);
+		}*/
+
+.player {
+	padding: 30px;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	border: 1px solid;
+	position: relative;
+	opacity: 0.4;
+	display: inline-block;
+	margin: 60px 42px 0 42px;
+}
+.player>span {
+	position: ABSOLUTE;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#result {
+	display: none;
+	font-size: 21px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}

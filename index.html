@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="step1" class="open">
+	<div class="tab">
+		<h1>Select Game Size</h1>
+		<button onclick="setGame(3)" class="btn-size"><span>3</span></button>
+		<button onclick="setGame(4)" class="btn-size"><span>4</span></button>
+		<button onclick="setGame(5)" class="btn-size"><span>5</span></button>
+	</div>
+	
+</div>
+
+<div id="step2">
+	<div class="player-status">
+		<div id="p1" class="player">
+			<span>1</span>
+		</div>
+		<div id="p2" class="player">
+			<span>2</span>
+		</div>
+	</div>
+	<div id="result"></div>
+	<button onclick="resetGame()" id="restart">Reset Game</button>
+	<table id="board">
+		
+	</table>
+</div>
+	<!-- <div id="game">
+		<table>
+			<tr>
+				<td class="box">1</td>
+				<td class="box">2</td>
+				<td class="box">3</td>
+			</tr>
+			<tr>
+				<td class="box">4</td>
+				<td class="box">5</td>
+				<td class="box">6</td>
+			</tr>
+			<tr>
+				<td class="box">7</td>
+				<td class="box">8</td>
+				<td class="box">9</td>
+			</tr>
+		</table>
+	</div> -->
+
+	<script src="js/index.js"></script>
+</body>
+</html>
